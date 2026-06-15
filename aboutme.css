@@ -1,0 +1,314 @@
+/* ==========================================================================
+   RESET & DASAR
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fdfaf6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+span {
+    color: #ff4757; /* Warna merah pedas untuk aksen */
+}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #2f3542;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #57606f;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff4757;
+}
+
+.btn-kontak {
+    background-color: #ff4757;
+    color: #fff !important;
+    padding: 8px 20px;
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s !important;
+}
+
+.btn-kontak:hover {
+    background-color: #e84118;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero {
+    max-width: 1200px;
+    margin: 120px auto 60px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70vh;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #2f3542;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #747d8c;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffa502;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 8px 15px rgba(255, 165, 2, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff7f50;
+    transform: scale(1.05);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 85%;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   PRODUK SECTION
+   ========================================================================== */
+.produk-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #2f3542;
+}
+
+.section-title p {
+    color: #a4b0be;
+}
+
+.grid-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 71, 87, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.badge-hot {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ff4757;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card-info {
+    padding: 25px;
+}
+
+.card-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2f3542;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #747d8c;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    height: 66px; /* Membatasi tinggi teks agar serasi */
+    overflow: hidden;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.harga {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ff4757;
+}
+
+.btn-beli {
+    text-decoration: none;
+    background-color: #2f3542;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-beli:hover {
+    background-color: #ff4757;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+    background-color: #2f3542;
+    color: #f1f2f6;
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+/* ==========================================================================
+   ANIMASI (CSS KEYFRAMES)
+   ========================================================================== */
+
+/* Efek Memantul Halus pada Tombol */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+.anim-bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Efek Mengapung pada Gambar Hero */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+.anim-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Efek Muncul Pudar untuk Judul */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.anim-fade {
+    animation: fadeIn 1s ease-out forwards;
+}
+.anim-fade-delayed {
+    opacity: 0;
+    animation: fadeIn 1s ease-out 0.3s forwards;
+}
+
+/* RESPONSIVE DESIGN (Untuk tampilan HP) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .hero-content {
+        padding-right: 0;
+        margin-top: 30px;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    .nav-links {
+        display: none; /* Menyembunyikan menu di HP untuk kesederhanaan tanpa JS */
+    }
+}
